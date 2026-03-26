@@ -5,9 +5,9 @@ LOCAL_PORT="${LOCAL_PORT:-3306}"
 REMOTE_PORT="${REMOTE_PORT:-3306}"
 
 SERVICE="${SERVICE:-analytics}"
-REMOTE_HOST="$WIKI_DB.$SERVICE.db.svc.eqiad.wmflabs"
+REMOTE_HOST="$WIKI_DB.$SERVICE.db.svc.wikimedia.cloud"
 
-HOST="${HOST:-tools-login.wmflabs.org}"
+HOST="${HOST:login.toolforge.org}"
 
 # Copy the mounted SSH properties, to set the right permissions
 if [ -d "/root/ssh/" ]; then
